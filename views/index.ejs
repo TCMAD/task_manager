@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gestionnaire de tâche</title>
+    <script type="text/javascript">
+      function add_task(Tasks){
+        var task_input = document.Tasks.task.value;
+        alert(task_input);
+        return task_input;
+      }
+    </script>
+  </head>
+  <body>
+      <h1>Vos tâches</h1>
+      <ul>
+        <li><%= taches %></li>
+
+      </ul>
+
+      <form name="Tasks">
+          <input type="text" name="task" placeholder="Rajouter vos tâches">
+          <input type="button" name="bouton" value="Enregistrer" onclick="add_task(Tasks)">
+      </form>
+
+  </body>
+</html>
